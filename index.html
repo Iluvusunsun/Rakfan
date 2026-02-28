@@ -15,27 +15,17 @@ body{
 }
 
 h1{
-  margin-top:60px;
+  margin-top:40px;
   color:white;
-  font-size:40px;
-}
-
-button{
-  padding:15px 30px;
-  font-size:20px;
-  border:none;
-  border-radius:30px;
-  background:white;
-  cursor:pointer;
+  font-size:36px;
 }
 
 .photo{
   position:absolute;
-  width:150px;
+  width:140px;
   border-radius:20px;
-  box-shadow:0 10px 20px rgba(0,0,0,0.3);
+  box-shadow:0 10px 25px rgba(0,0,0,0.3);
   animation: float 6s infinite ease-in-out;
-  display:none;
 }
 
 @keyframes float{
@@ -48,32 +38,12 @@ button{
 
 <body>
 
-<h1>กดๆๆ</h1>
-<button onclick="startLove()">เพลงง</button>
+<h1>รักหมู</h1>
 
-<!-- รูปแฟน -->
 <img src="Sun1.jpg" class="photo" style="top:15%; left:10%; --rotate:-10deg;">
 <img src="Sun2.jpg" class="photo" style="top:60%; left:70%; --rotate:8deg;">
 <img src="Sun3.jpg" class="photo" style="top:70%; left:25%; --rotate:-5deg;">
 <img src="Sun4.jpg" class="photo" style="top:25%; left:80%; --rotate:12deg;">
-
-<audio id="music" loop>
-  <source src="iluvusun.mp3" type="audio/mpeg">
-</audio>
-
-<script>
-function startLove(){
-  const music = document.getElementById("music");
-  music.play();
-  
-  document.querySelectorAll(".photo").forEach(p=>{
-    p.style.display="block";
-  });
-
-  document.querySelector("button").style.display="none";
-  document.querySelector("h1").innerText="รักนะจุ้บๆ";
-}
-</script>
 
 </body>
 </html>
