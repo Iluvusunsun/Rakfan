@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>สำหรับหมู</title>
+<title>อิอิ</title>
 
 <style>
 body{
@@ -15,35 +15,65 @@ body{
 }
 
 h1{
-  margin-top:40px;
+  margin-top:25px;
   color:white;
-  font-size:36px;
+  font-size:30px;
 }
 
+/* รูป */
 .photo{
   position:absolute;
-  width:140px;
+  width:120px;
   border-radius:20px;
   box-shadow:0 10px 25px rgba(0,0,0,0.3);
   animation: float 6s infinite ease-in-out;
 }
 
+/* รูป */
+.center-photo{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:230px;
+  border-radius:25px;
+  box-shadow:0 15px 40px rgba(0,0,0,0.4);
+  z-index:10;
+  animation: floatCenter 5s infinite ease-in-out;
+}
+
 @keyframes float{
   0%{transform:translateY(0px) rotate(var(--rotate));}
-  50%{transform:translateY(-25px) rotate(var(--rotate));}
+  50%{transform:translateY(-20px) rotate(var(--rotate));}
   100%{transform:translateY(0px) rotate(var(--rotate));}
+}
+
+@keyframes floatCenter{
+  0%{transform:translate(-50%,-50%) translateY(0);}
+  50%{transform:translate(-50%,-50%) translateY(-15px);}
+  100%{transform:translate(-50%,-50%) translateY(0);}
 }
 </style>
 </head>
 
 <body>
 
-<h1>รักหมู</h1>
+<h1>หมูเอ้ย^^</h1>
 
-<img src="IMG_20260228_080112_320.jpg" class="photo" style="top:15%; left:10%; --rotate:-10deg;">
+
+<img src="IMG_20260228_080112_320.jpg" class="photo" style="top:10%; left:5%; --rotate:-10deg;">
 <img src="IMG_20260228_080109_756.jpg" class="photo" style="top:60%; left:70%; --rotate:8deg;">
-<img src="IMG_20260228_080105_463.jpg" class="photo" style="top:70%; left:25%; --rotate:-5deg;">
+<img src="IMG_20260228_080105_463.jpg" class="photo" style="top:75%; left:20%; --rotate:-5deg;">
 <img src="IMG_20260228_080114_842.jpg" class="photo" style="top:25%; left:80%; --rotate:12deg;">
+
+
+<img src="IMG_20260228_210320_614.jpg" class="photo" style="top:15%; left:15%; --rotate:-8deg;">
+<img src="IMG_20260228_210329_876.jpg" class="photo" style="top:65%; left:80%; --rotate:7deg;">
+<img src="IMG_20260228_210333_242.jpg" class="photo" style="top:80%; left:45%; --rotate:-6deg;">
+<img src="IMG_20260228_210326_903.jpg" class="photo" style="top:35%; left:90%; --rotate:9deg;">
+
+
+<img src="IMG_20260228_210316_770.jpg" class="center-photo">
 
 </body>
 </html>
